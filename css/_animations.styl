@@ -2,7 +2,7 @@
   Possible Animations:
   enter
   leave
-  appear Must set transitionAppear={true} on animation component 
+  appear Must set transitionAppear={true} on animation component
 */
 
 .order-enter
@@ -27,20 +27,19 @@
 
 .count-enter
   transition all 0.25s
-  transform translateY(100%)
+  transform translateY(200%)
   &.count-enter-active
     opacity 1
     transform translateY(0)
-    
-    
-  
+
+
+
 .count-leave
   transition all 0.25s
+  position absolute
   left 0
   bottom 0
   transform translateY(0)
   position absolute !important
   &.count-leave-active
     transform translateY(-100%)
-    
-  
